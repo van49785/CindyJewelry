@@ -1,0 +1,67 @@
+/* assets/css/components/contact.css */
+.contact-us {
+    margin: auto;
+    align-items: center;
+}
+
+/* Contact Us Title */
+.contact-us-title {
+    text-align: center;
+    font-size: 1.5rem; /* text-2xl */
+    border-top: 1px solid #e5e7eb; /* border-t */
+    padding-top: 1rem;
+}
+
+/* Contact Content */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* gap-16 */
+    margin: 2.5rem 0; /* my-10 */
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 450px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem; /* gap-6 */
+    width: 100%;
+    color: #4b5563; /* text-gray-600 */
+}
+
+.contact-header {
+    font-weight: 600; /* font-semibold */
+    font-size: 1.25rem; /* text-xl */
+    color: #4b5563; /* text-gray-600 */
+}
+
+.contact-info {
+    color: #6b7280; /* text-gray-500 */
+}
+
+.explore-jobs-btn {
+    border: 1px solid #000000; /* border */
+    padding: 1rem 2.5rem; /* px-10 py-4 */
+    font-size: 0.875rem; /* text-sm */
+    max-width: max-content;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 0.375rem; /* rounded */
+}
+
+.explore-jobs-btn:hover {
+    background-color: #000000; /* bg-black */
+    color: #ffffff; /* text-white */
+}

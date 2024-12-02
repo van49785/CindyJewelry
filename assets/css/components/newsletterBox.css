@@ -1,0 +1,65 @@
+/* assets/css/components/newsLetterBox.css */
+
+.newsletter-box {
+    text-align: center;
+    margin-top: 5rem; /* mt-20 */
+}
+
+.newsletter-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 500; /* font-medium */
+    color: #1f2937; /* text-gray-800 */
+}
+
+.newsletter-description {
+    color: #9ca3af; /* text-gray-400 */
+    margin-top: 0.75rem; /* mt-3 */
+    font-size: 0.875rem; /* text-sm */
+}
+
+@media (min-width: 640px) {
+    .newsletter-description {
+        font-size: 1rem; /* sm:text-sm */
+    }
+}
+
+@media (min-width: 768px) {
+    .newsletter-description {
+        font-size: 1.125rem; /* md:text-base */
+    }
+}
+
+.newsletter-form {
+    width: 100%;
+    max-width: 500px; /* sm:w-1/2 */
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* gap-3 */
+    margin: 1.5rem auto; /* my-6 mx-auto */
+    border: 1px solid #d1d5db; /* border */
+    padding-left: 0.75rem; /* pl-3 */
+    border-radius: 0.375rem; /* rounded */
+}
+
+.newsletter-input {
+    flex: 1; /* w-full sm:flex-1 */
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 0.875rem; /* text-sm */
+}
+
+.newsletter-button {
+    background-color: #000000; /* bg-black */
+    color: #ffffff; /* text-white */
+    font-size: 0.75rem; /* text-xs */
+    padding: 1rem 2.5rem; /* px-10 py-4 */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 0.375rem; /* rounded */
+}
+
+.newsletter-button:hover {
+    background-color: #1f2937; /* Darker black on hover */
+}
