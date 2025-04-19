@@ -12,7 +12,7 @@ jobs:
         name: Check out code
 
       - name: Build Docker Image
-        run: docker build -t your-image-name .
+        run: docker build -t cindy-jewelry .
 
       - name: Push Docker Image
-        run: docker push your-image-name
+        run: docker push cindy-jewelry
