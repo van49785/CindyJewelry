@@ -1,11 +1,24 @@
-name: CI Pipeline
+name: CI PIPELINE
+
 on:
-   push:
-       branches: [ main ]
+  push:
+    branches: [ main ]
+
 jobs:
-   build:
-       runs-on: ubuntu-latest
-       steps:
-            - uses: actions/checkout@v3
-            - name: Build Docker Image
-              run: docker build -t cindy-jewelry .
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Check out code
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.thaovan01320 }}
+          password: ${{ secrets.Nguyenvan09 }}
+
+      - name: Build Docker Image
+        run: docker build -t cindy-jewelry/cindy-jewelry:latest .
+
+      - name: Push Docker Image
+        run: docker push cindy-jewelry/cindy-jewelry:latest
