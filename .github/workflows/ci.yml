@@ -12,10 +12,16 @@ jobs:
         name: Check out code
 
       - name: Log in to Docker Hub
-        run: echo "${{ secrets.Nguyenvan09 }}" | docker login -u "${{ secrets.thaovan01320 }}" --password-stdin
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Build Docker Image
-        run: docker build -t cindy-jewelry/cindy-jewelry:latest .
+        run: docker build -t cindy-jewelry/cindy-jewelry:${{ github.sha }} .
+
+      - name: Test Docker Image
+        run: docker run --rm cindy-jewelry/cindy-jewelry:${{ github.sha }}
 
       - name: Push Docker Image
-        run: docker push cindy-jewelry/cindy-jewelry:latest
+        run: docker push cindy-jewelry/cindy-jewelry:${{ github.sha }}
+
+      - name: Clean up old Docker images
+        run: docker image prune -f
