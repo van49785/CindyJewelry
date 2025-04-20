@@ -1,16 +1,16 @@
 // Mock data to simulate the products
 const products = [
-    { _id: '7', name: 'Spike Earrings', image: ['/assets/images/bongtai1.png'], price: 125, bestseller: true },
-    { _id: '8', name: 'Diamonds and Gold Eternity Mini Hoops', image: ['/assets/images/bongtai2.png'], price: 730, bestseller: true },
-    { _id: '9', name: 'Infinity Necklace', image: ['/assets/images/vongco4.png'], price: 154, bestseller: true },
-    { _id: '10', name: 'Twister Ring', image: ['/assets/images/nhan1.png'], price: 95, bestseller: true },
-    { _id: '11', name: 'Laura Bracelet', image: ['/assets/images/vongtay1.png'], price: 87, bestseller: true },
-    { _id: '12', name: 'Eternum Bracelet', image: ['/assets/images/vongtay3.png'], price: 103, bestseller: false },
-    { _id: '13', name: 'Blue lace agate Moon ring', image: ['/assets/images/nhan6.png'], price: 60 },
-    { _id: '14', name: 'Isa Diamond cord bracelet', image: ['/assets/images/vongtay5.png'], price: 70 },
-    { _id: '15', name: 'Loop chain bracelet', image: ['/assets/images/vongtay4.png'], price: 80 },
-    { _id: '16', name: 'Olga mini hoops', image: ['/assets/images/bongtai3.png'], price: 90 },
-    { _id: '17', name: 'Mini Crown Necklace', image: ['/assets/images/vongco3.png'], price: 100 },
+    { _id: '7', name: 'Spike Earrings', image: ['./assets/images/bongtai1.png'], price: 125, bestseller: true },
+    { _id: '8', name: 'Diamonds and Gold Eternity Mini Hoops', image: ['./assets/images/bongtai2.png'], price: 730, bestseller: true },
+    { _id: '9', name: 'Infinity Necklace', image: ['./assets/images/vongco4.png'], price: 154, bestseller: true },
+    { _id: '10', name: 'Twister Ring', image: ['./assets/images/nhan1.png'], price: 95, bestseller: true },
+    { _id: '11', name: 'Laura Bracelet', image: ['./assets/images/vongtay1.png'], price: 87, bestseller: true },
+    { _id: '12', name: 'Eternum Bracelet', image: ['./assets/images/vongtay3.png'], price: 103, bestseller: false },
+    { _id: '13', name: 'Blue lace agate Moon ring', image: ['./assets/images/nhan6.png'], price: 60 },
+    { _id: '14', name: 'Isa Diamond cord bracelet', image: ['./assets/images/vongtay5.png'], price: 70 },
+    { _id: '15', name: 'Loop chain bracelet', image: ['./assets/images/vongtay4.png'], price: 80 },
+    { _id: '16', name: 'Olga mini hoops', image: ['./assets/images/bongtai3.png'], price: 90 },
+    { _id: '17', name: 'Mini Crown Necklace', image: ['./assets/images/vongco3.png'], price: 100 },
 ];
 
 // Fetch và nhúng nội dung Latest Collection
