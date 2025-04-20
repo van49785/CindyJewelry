@@ -18,6 +18,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initializeOurPolicy() {
-    // Nếu có thêm JavaScript cho OurPolicy, khởi tạo ở đây
-    // Trong trường hợp này, OurPolicy là phần tĩnh nên không cần thêm JS
 }

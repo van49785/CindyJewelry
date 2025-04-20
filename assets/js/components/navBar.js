@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navbarContainer.innerHTML = data;
             initializeNavbar();
         })
-        .catch(error => console.error('Error loading navbar:', error));
+        .catch(error => console.error('Error loading navbar:', error.message));
 });
 
 function initializeNavbar() {
