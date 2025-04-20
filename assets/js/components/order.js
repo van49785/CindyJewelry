@@ -1,9 +1,9 @@
 // Mock product data
 const products = [
-    { _id: '1', name: 'Spike Earrings', image: ['/assets/images/bongtai1.png'], price: 125, bestseller: true },
-    { _id: '2', name: 'Diamonds and Gold Eternity Mini Hoops', image: ['/assets/images/bongtai2.png'], price: 730, bestseller: true },
-    { _id: '3', name: 'Infinity Necklace', image: ['/assets/images/vongco4.png'], price: 154, bestseller: true },
-    { _id: '4', name: 'Twister Ring', image: ['/assets/images/nhan1.png'], price: 95, bestseller: true },
+    { _id: '1', name: 'Spike Earrings', image: ['./assets/images/bongtai1.png'], price: 125, bestseller: true },
+    { _id: '2', name: 'Diamonds and Gold Eternity Mini Hoops', image: ['./assets/images/bongtai2.png'], price: 730, bestseller: true },
+    { _id: '3', name: 'Infinity Necklace', image: ['./assets/images/vongco4.png'], price: 154, bestseller: true },
+    { _id: '4', name: 'Twister Ring', image: ['./assets/images/nhan1.png'], price: 95, bestseller: true },
   ];
   
   const currency = '$';
