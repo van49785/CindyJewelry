@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Tải nội dung Navbar
     const navbarContainer = document.getElementById('navbar');
-    fetch('../../components/navbar.html') // Đường dẫn từ navBar.js tới navbar.html
+    fetch('./components/navbar.html') // Đường dẫn từ navBar.js tới navbar.html
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

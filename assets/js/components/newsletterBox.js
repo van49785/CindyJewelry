@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Tải nội dung NewsLetterBox
     const newsletterContainer = document.getElementById('newsletterBox');
-    fetch('../../components/newsLetterBox.html') // Đường dẫn từ newsLetterBox.js tới newsLetterBox.html
+    fetch('./components/newsLetterBox.html') // Đường dẫn từ newsLetterBox.js tới newsLetterBox.html
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
