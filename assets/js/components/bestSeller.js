@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    fetch('../../components/bestSeller.html')
+    fetch('./components/bestSeller.html')
     .then(response => response.text())
     .then(data => {
         bestsellerContainer.innerHTML = data;

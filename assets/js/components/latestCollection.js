@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    fetch('../../components/latestCollection.html')
+    fetch('./components/latestCollection.html')
     .then(response => response.text())
     .then(data => {
         latestCollectionContainer.innerHTML = data;

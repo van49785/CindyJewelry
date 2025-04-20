@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Tải nội dung OurPolicy
     const ourPolicyContainer = document.getElementById('ourPolicy');
-    fetch('../../components/ourPolicy.html') // Đường dẫn từ ourPolicy.js tới ourPolicy.html
+    fetch('./components/ourPolicy.html') // Đường dẫn từ ourPolicy.js tới ourPolicy.html
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
