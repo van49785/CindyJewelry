@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/components/navBar.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- components/navbar.html -->
+<nav class="navbar">
+    <div class="container">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+            <img src="../assets/images/logo.avif" alt="Logo" class="logo-img">
+        </a>
+
+        <!-- Navigation Links (Desktop) -->
+        <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link">HOME</a></li>
+            <li><a href="../Shop.html" class="nav-link">SHOP</a></li>
+            <li><a href="../AboutUs.html" class="nav-link">ABOUT US</a></li>
+            <li><a href="../Contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+
+        <!-- Icons -->
+        <div class="icons">
+            <img src="../assets/images/search-icon.svg" alt="Search" class="icon search-icon" id="searchIcon">
+            <a href="../Login.html"><img src="../assets/images/user.png" alt="Profile" class="icon profile-icon"></a>
+            <a href="../Cart.html" class="cart-link">
+                <img src="../assets/images/cart_new.svg" alt="Cart" class="icon cart-icon">
+                <span class="cart-count" id="cartCount">3</span>
+            </a>
+            <img src="../assets/images/menu-icon.png" alt="Menu" class="icon menu-icon" id="menuIcon">
+        </div>
+    </div>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="../assets/images/back.png" alt="Back" class="back-icon" id="backIcon">
+            <span class="close-text">Back</span>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="../index.html" class="sidebar-link">HOME</a></li>
+            <li><a href="../Shop.html" class="sidebar-link">SHOP</a></li>
+            <li><a href="../AboutUs.html" class="sidebar-link">ABOUT</a></li>
+            <li><a href="../Contact.html" class="sidebar-link">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+<script type="module" src="../assets/js/components/navBar.js"></script>
+</body>
+</html>

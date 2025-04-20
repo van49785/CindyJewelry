@@ -1,0 +1,77 @@
+/* assets/css/components/aboutUs.css */
+
+/* About Us Title */
+.about-us-title {
+    text-align: center;
+    font-size: 1.5rem; /* text-2xl */
+    border-top: 1px solid #e5e7eb; /* border-t */
+    padding-top: 1rem;
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* gap-16 */
+    margin: 2.5rem 0; /* my-10 */
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
+
+.about-image {
+    width: 100%;
+    max-width: 450px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem; /* gap-6 */
+    width: 100%;
+    color: #4b5563; /* text-gray-600 */
+}
+
+.about-mission {
+    color: #374151; /* text-gray-800 */
+}
+
+/* Why Choose Us Title */
+.about-us-why-title {
+    text-align: center;
+    font-size: 1.25rem; /* text-xl */
+    padding: 1rem 0;
+}
+
+/* Why Choose Us Content */
+.why-choose-us {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .why-choose-us {
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
+
+.why-item {
+    border: 1px solid #d1d5db; /* border */
+    padding: 2rem; /* px-10 py-8 sm:py-20 */
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.why-description {
+    color: #4b5563; /* text-gray-600 */
+    font-size: 0.875rem; /* text-sm */
+}

@@ -1,0 +1,63 @@
+/* assets/css/components/ourPolicy.css */
+
+.our-policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0; /* my-20 mt-40 */
+    text-align: center;
+    color: #4b5563; /* text-gray-700 */
+    font-size: 0.75rem; /* text-xs */
+}
+
+@media (min-width: 640px) {
+    .our-policy {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 0.875rem; /* sm:text-sm */
+    }
+}
+
+@media (min-width: 768px) {
+    .our-policy {
+        font-size: 1rem; /* md:text-base */
+    }
+}
+
+.policy-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* gap-12 */
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .policy-container {
+        flex-direction: row;
+        gap: 0.5rem; /* sm:gap-2 */
+    }
+}
+
+.policy-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.policy-icon {
+    width: 3rem; /* w-12 */
+    margin-bottom: 1.25rem; /* mb-5 */
+}
+
+.policy-title {
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 0.5rem;
+}
+
+.policy-description {
+    color: #9ca3af; /* text-gray-400 */
+}
+
