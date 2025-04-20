@@ -1,7 +1,7 @@
-CINDY JEWELRY
+CINDY JEWELRY: 
 This repository contains a jewelry e-commerce website deployed with modern DevOps practices. The project demonstrates implementing CI/CD pipelines and containerization.
 
-Project 1: CI/CD Pipeline with GitHub Actions
+Project 1: CI/CD Pipeline with GitHub Actions: 
 This project demonstrates the implementation of a CI/CD pipeline using GitHub Actions to automatically deploy a static website to GitHub Pages whenever changes are pushed to the main branch.
 
 Technologies Used:
@@ -25,7 +25,7 @@ CI/CD Pipeline Process
 
 Live Demo: The website is available at: https://van49785.github.io/CindyJewelry/
 
-Project 2: Docker Containerization
+Project 2: Docker Containerization: 
 This project demonstrates how to containerize a static website using Docker and Nginx, allowing for consistent deployment across different environments.
 
 Technologies Used
