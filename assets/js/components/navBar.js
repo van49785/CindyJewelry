@@ -1,9 +1,7 @@
-// assets/js/components/navBar.js
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Tải nội dung Navbar
+    // Load Navbar content
     const navbarContainer = document.getElementById('navbar');
-    fetch('./components/navbar.html') // Đường dẫn từ navBar.js tới navbar.html
+    fetch('./components/navbar.html') // Update with your repository name
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -21,32 +19,36 @@ function initializeNavbar() {
     const menuIcon = document.getElementById('menuIcon');
     const sidebar = document.getElementById('sidebar');
     const backIcon = document.getElementById('backIcon');
-    const cartCountElement = document.getElementById('cartCount');
 
-    // Mở sidebar khi nhấp vào menu icon
+    // Open sidebar when clicking menu icon
     if (menuIcon && sidebar) {
         menuIcon.addEventListener('click', () => {
             sidebar.classList.add('active');
         });
+    } else {
+        console.warn('menuIcon or sidebar element not found');
     }
 
-    // Đóng sidebar khi nhấp vào back icon
+    // Close sidebar when clicking back icon
     if (backIcon && sidebar) {
         backIcon.addEventListener('click', () => {
             sidebar.classList.remove('active');
         });
+    } else {
+        console.warn('backIcon or sidebar element not found');
     }
 
-    // Cập nhật số lượng giỏ hàng từ localStorage
+    // Update cart count from localStorage
     updateCartCount();
+}
 
-// Hàm cập nhật số lượng giỏ hàng
+// Function to update cart count
 function updateCartCount() {
     const cartCountElement = document.getElementById('cartCount');
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     if (cartCountElement) {
         cartCountElement.textContent = cart.length;
+    } else {
+        console.warn('cartCountElement not found');
     }
-}
-
 }
